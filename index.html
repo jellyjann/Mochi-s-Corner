@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochi's Corner — Cozy Virtual Study Space</title>
+    <meta name="description" content="A cozy lo-fi gamified virtual study space and Pomodoro planner featuring Mochi the mascot." />
+    <script>
+      // Make window.fetch writable/reassignable to prevent "Cannot set property fetch of Window which has only a getter"
+      try {
+        let _fetch = window.fetch;
+        if (_fetch) {
+          Object.defineProperty(window, 'fetch', {
+            get() { return _fetch; },
+            set(v) { _fetch = v; },
+            configurable: true,
+            enumerable: true
+          });
+        }
+      } catch (e) {}
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4S83H8ZQ5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S4S83H8ZQ5');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,300..900;1,300..900&family=Quicksand:wght@400;500;600;700&family=Short+Stack&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#FAF7F2] text-[#4A3E3D] antialiased selection:bg-[#FFD1DC] selection:text-[#5D4037] overflow-hidden select-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

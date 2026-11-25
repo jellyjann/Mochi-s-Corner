@@ -1,0 +1,6 @@
+{
+  "name": "Mochi's Cozy Study Space",
+  "description": "A cozy, gamified virtual study space and Pomodoro planner featuring Mochi the mascot, interactive background scenes, ambient lo-fi audio, task manager, mascot customization, and level progression.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
